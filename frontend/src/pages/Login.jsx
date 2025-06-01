@@ -56,61 +56,7 @@ const Login = () => {
   }, []);
 
   return (
-    //     <div className="w-full h-screen bg-gradient-to-br from-orange-100 to-rose-100 flex items-center justify-center">
-    //     <div className="w-full max-w-[500px] h-[600px] bg-white rounded-3xl shadow-2xl p-5 flex flex-col gap-8 animate-fade-in">
-    //       <div className="w-full h-[200px] bg-gradient-to-tr from-rose-400 to-orange-300 rounded-b-[30%] shadow-md flex items-center justify-center animate-slide-down">
-    //       <h1 className="text-white font-extrabold text-3xl tracking-wide drop-shadow-lg">
-    //   Welcome to{" "}
-    //   <span className="inline-block animate-text-glow-pop font-extrabold">
-    //   ChatVerse
-    // </span>
-    // </h1>
-    //       </div>
-    //       <form
-    //         className="w-full flex flex-col gap-6 items-center animate-fade-up"
-    //         onSubmit={handleLogin}
-    //       >
-    //         <input
-    //           type="email"
-    //           placeholder="Email address"
-    //           className="w-[90%] h-[50px] border border-rose-400 px-5 py-2 rounded-xl shadow-inner focus:outline-none focus:ring-2 focus:ring-rose-400 text-gray-800 text-lg transition duration-200"
-    //           onChange={(e) => setEmail(e.target.value)}
-    //           value={email}
-    //           required
-    //         />
-    //         <div className="w-[90%] h-[50px] border border-rose-400 rounded-xl shadow-inner relative">
-    //           <input
-    //             type={show ? "text" : "password"}
-    //             placeholder="Password"
-    //             className="w-full h-full px-5 py-2 rounded-xl text-gray-800 text-lg focus:outline-none"
-    //             onChange={(e) => setPassword(e.target.value)}
-    //             value={password}
-    //             required
-    //           />
-    //           <span
-    //             className="absolute top-2 right-5 text-rose-500 font-medium cursor-pointer"
-    //             onClick={() => setShow((prev) => !prev)}
-    //           >
-    //             {show ? "Hide" : "Show"}
-    //           </span>
-    //         </div>
-    //         {err && <p className="text-red-500 font-medium">{"*" + err}</p>}
-    //         <button
-    //           className="px-6 py-3 bg-rose-400 text-white rounded-full shadow-md hover:bg-rose-500 transition duration-300 w-[200px] mt-4 font-semibold disabled:opacity-60"
-    //           disabled={loading}
-    //         >
-    //           {loading ? "Loading..." : "Login"}
-    //         </button>
-    //         <p
-    //           className="cursor-pointer text-gray-600 hover:underline"
-    //           onClick={() => navigate("/signup")}
-    //         >
-    //           Don't have an account?{" "}
-    //           <span className="text-rose-500 font-semibold">Sign up</span>
-    //         </p>
-    //       </form>
-    //     </div>
-    //   </div>
+    
 
     <div className="relative w-full h-screen overflow-hidden flex items-center justify-center bg-gradient-to-br from-orange-100 to-rose-100">
       {/* 3D Plane Background */}
