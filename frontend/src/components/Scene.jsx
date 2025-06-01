@@ -16,8 +16,9 @@ const Scene = ({ planeRef, flyPlane }) => {
     const plane = planeRef?.current;
     if (flyPlane && plane) {
       gsap.set(plane.position, { x: 3.5, y: -2, z: 0 });
-      gsap.set(plane.rotation, { x: Math.PI / 2, y: 0, z: 0 });
-      gsap.set(plane.material, { opacity: 1, transparent: true });
+      plane.rotation.set(Math.PI / 2, Math.PI / 2, 0);
+
+            gsap.set(plane.material, { opacity: 1, transparent: true });
 
       const tl = gsap.timeline();
 
@@ -37,8 +38,7 @@ const Scene = ({ planeRef, flyPlane }) => {
             curviness: 1.5,
             autoRotate: false,
           },
-          ease: "power1.inOut",
-        },
+          ease: "power4.out",        },
         0
       );
 
