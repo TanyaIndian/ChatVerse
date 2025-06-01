@@ -3,7 +3,23 @@ import dotenv from "dotenv";
 import connectDb from "./config/db.js";
 import authRouter from "./routes/auth.routes.js";
 import cookieParser from "cookie-parser";
+
 dotenv.config(); // Ensure this is called early to load .env variables
+// --- Primary Debugging Point ---
+console.log("------------------------------------------------------------");
+console.log("DEBUGGING MONGODB_URL (from backend/index.js)");
+console.log("Time:", new Date().toISOString());
+
+const mongoURLFromEnv = process.env.MONGODB_URL;
+
+if (mongoURLFromEnv) {
+    console.log("MONGODB_URL FULL VALUE (logs are private):", mongoURLFromEnv);
+} else {
+    console.log("MONGODB_URL IS ***NOT SET*** or is empty in process.env!");
+}
+console.log("------------------------------------------------------------");
+
+
 import cors from "cors";
 import userRouter from "./routes/user.routes.js";
 import messageRouter from "./routes/message.routes.js";
